@@ -1,4 +1,7 @@
 #!/bin/bash
+
+ls -l backend.conf
+
 rm backend.conf
 
 echo "[database]
