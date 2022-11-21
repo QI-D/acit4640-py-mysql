@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "[database]
+MYSQL_HOST = ${MYSQL_HOST}
+MYSQL_PORT = 3306
+MYSQL_DB = ${MYSQL_DATABASE}
+MYSQL_USER = ${MYSQL_USER}
+MYSQL_PASSWORD = ${MYSQL_PASSWORD}
+" > backend.conf
