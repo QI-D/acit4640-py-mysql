@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  backend:
+    image: qidang/4640_week12:backend
+    depends_on:
+      - database
+    env_file:
+      - variables.env
+  database:
+    image: mysql
+    env_file:
+      - variables.env
+  frontend:
+    image: qidang/4640_week12:frontend
+    depends_on:
+      - backend
+    env_file:
+      - variables.env
+    ports:
+      - 8000:80
