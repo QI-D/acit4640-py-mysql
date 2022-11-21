@@ -1,4 +1,5 @@
 #!/bin/bash
+rm backend.conf
 
 echo "[database]
 MYSQL_HOST = ${MYSQL_HOST}
